@@ -6,7 +6,6 @@
   top: 99px;
   left: 100vw;
   background-color: white;
-  overflow: hidden;
 }
 
 .profileblock{
@@ -111,5 +110,7 @@
 
 .active{
   left: 0 !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
