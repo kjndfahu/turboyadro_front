@@ -9,9 +9,8 @@ import {findAllByDisplayValue} from "@testing-library/react";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 
 
-function Header() {
+function Header({activeBurger, setActiveBurger}) {
     const[active, setActive] = React.useState(false);
-    const [activeBurger, setActiveBurger] = React.useState(false)
     const [currentTab, setCurrentTab] = React.useState('register');
 
     const tabs = {

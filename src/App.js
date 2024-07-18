@@ -7,13 +7,14 @@ import Footer from "./components/Footer/Footer";
 import React from "react";
 
 function App() {
+    const [activeBurger, setActiveBurger] = React.useState(false)
 
   return (
     <div className={styles.wrapper}>
-        <Header />
+        <Header activeBurger={activeBurger} setActive={setActiveBurger} />
       <div className={styles.content}>
         <Routes>
-            <Route path="/" element={<Main />}></Route>
+            <Route path="/" element={<Main activeBurger={activeBurger}/>}></Route>
         </Routes>
       </div>
         <Footer/>
