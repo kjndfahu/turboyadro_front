@@ -1,0 +1,168 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: left;
+}
+
+.allblock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 90px;
+  align-items: center;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 15vw;
+  border-radius: 15px;
+  box-shadow: 0 8px 40px  #00000026;
+}
+.inblockinfo{
+  width: 45vw;
+  height: 13.8vw;
+  margin: 5px;
+  border-radius: 15px ;
+  border: 2px dashed #E2E3EF;
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 20px;
+  text-align: left;
+}
+
+th {
+  font-family: "Inter", sans-serif;
+  color: #585967;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.94px;
+  text-align: left;
+  background-color: #f9f9f9;
+  border-bottom: 2px dashed #E2E3EF;
+}
+
+td {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  border-bottom: 2px dashed #E2E3EF;
+}
+
+.price {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.2px;
+  text-align: left;
+  color: #ff6600;
+}
+
+.firstline{
+  display: flex;
+  flex-direction: row;
+}
+
+.secondline{
+  display: flex;
+  flex-direction: row;
+}
+
+.textblock{
+  h2{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.2px;
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+
+.rightblock{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 980px){
+  h1{
+    justify-content: center;
+  }
+
+  .allblock{
+    flex-direction: column;
+  }
+
+  .rightblock{
+    flex-direction: column;
+  }
+
+  .firstline{
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  .textblock{
+    text-align: center;
+
+    .paragraph{
+      width: 70vw;
+      text-align: center;
+    }
+  }
+
+  .secondline{
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  .allblock{
+    width: auto;
+    height: auto;
+  }
+
+  .info{
+    width: auto;
+    height: auto;
+  }
+
+  .inblockinfo{
+    width: auto;
+    height: auto;
+  }
+
+}

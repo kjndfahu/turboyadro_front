@@ -1,0 +1,90 @@
+.wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 1250px;
+  flex-direction: column;
+  padding: 15px;
+  border-bottom: 1px solid #E2E3EF;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  font-weight: 500;
+  list-style: none;
+  font-size: 14px;
+
+  .logotext{
+    padding-left:10px;
+  }
+
+  .list{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+  }
+
+  .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .login{
+    width: 80px;
+    background-color: transparent;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .how_works{
+    cursor: pointer;
+  }
+
+  .price{
+    cursor: pointer;
+  }
+
+  .questions{
+    cursor: pointer;
+  }
+
+  .registration{
+    cursor: pointer;
+  }
+
+}
+
+.burger{
+  display: none;
+}
+
+@media (max-width: 980px){
+  .wrapper{
+    padding: 0;
+  }
+  .burger{
+    display: flex;
+  }
+
+  .content{
+    margin: 5px;
+    width: 90vw;
+
+    .list{
+      display: none;
+    }
+
+    .buttons{
+      display: none;
+    }
+  }
+}
+
