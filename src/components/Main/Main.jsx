@@ -8,9 +8,9 @@ import Affilate from "./Affilate/Affilate";
 import Questions from "./Questions/Questions";
 import Registration from "../Modal/Modal";
 
-function Main({activeBurger}){
+function Main(){
     return (
-        <div className={activeBurger ? `${styles.wrapperfalse} ${styles.wrapper}` : styles.wrapper}>
+        <div className={styles.wrapper}>
             <InfoBlock/>
             <NouHau/>
             <VideoBlock/>

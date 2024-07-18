@@ -81,10 +81,16 @@
   .wrapper{
     display: flex;
     text-align: center;
+
+    h1{
+        font-size: 35px;
+    }
+
   }
   h1{
     width: 90vw;
     flex-wrap: wrap;
+    font-size: 35px;
   }
 
   .image{

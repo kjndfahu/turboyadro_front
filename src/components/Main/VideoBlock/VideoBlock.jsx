@@ -23,7 +23,7 @@ function VideoBlock(){
                         </div>
                         <p>Берем запросы со страниц конкурентов,<br/> используя платные, обновляемые базы</p>
                         <div className={styles.reactplayer}>
-                            <ReactPlayer light url={'https://youtu.be/Q8-F_jp__yk'}
+                            <ReactPlayer light url={'https://youtu.be/VJRSURLW__U'}
                                          playIcon={<svg width="47" height="49"
                                                         viewBox="0 0 47 49"
                                                         fill="none"
@@ -64,7 +64,7 @@ function VideoBlock(){
                         <p>Вначале производится чистка запросов. Далее сбор данных и их обработка с перепроверкой
                             данных</p>
                         <div className={styles.reactplayer}>
-                            <ReactPlayer light url={'https://youtu.be/Q8-F_jp__yk'}
+                            <ReactPlayer light url={'https://youtu.be/VJRSURLW__U'}
                                          playIcon={<svg width="47" height="49"
                                                         viewBox="0 0 47 49"
                                                         fill="none"
@@ -97,7 +97,7 @@ function VideoBlock(){
                         </div>
                         <p>Сбор частотности. Определение правильного (самого частотного) порядка слов</p>
                         <div className={styles.reactplayer}>
-                            <ReactPlayer light url={'https://youtu.be/Q8-F_jp__yk'}
+                            <ReactPlayer light url={'https://youtu.be/VJRSURLW__U'}
                                          playIcon={<svg width="47" height="49"
                                                         viewBox="0 0 47 49"
                                                         fill="none"

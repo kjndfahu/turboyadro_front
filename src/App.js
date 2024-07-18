@@ -8,13 +8,14 @@ import React from "react";
 
 function App() {
     const [activeBurger, setActiveBurger] = React.useState(false)
+    console.log(activeBurger)
 
   return (
-    <div className={styles.wrapper}>
+    <div className={activeBurger ? `${styles.wrapperfalse} ${styles.wrapper}` : styles.wrapper}>
         <Header activeBurger={activeBurger} setActiveBurger={setActiveBurger} />
       <div className={styles.content}>
         <Routes>
-            <Route path="/" element={<Main activeBurger={activeBurger}/>}></Route>
+            <Route path="/" element={<Main />}></Route>
         </Routes>
       </div>
         <Footer/>

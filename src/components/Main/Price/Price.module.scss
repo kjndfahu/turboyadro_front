@@ -109,8 +109,11 @@ td {
 }
 
 @media (max-width: 980px){
-  h1{
-    justify-content: center;
+  .wrapper{
+    h1{
+      font-size: 35px;
+      justify-content: center;
+    }
   }
 
   .allblock{
@@ -148,6 +151,16 @@ td {
       width: 130px;
       height: 130px;
     }
+  }
+
+  .table{
+    td{
+      font-size: 16px;
+    }
+  }
+
+  .price{
+    font-size: 17px;
   }
 
   .allblock{
