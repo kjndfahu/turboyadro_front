@@ -12,6 +12,7 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu";
 function Header({activeBurger, setActiveBurger}) {
     const[active, setActive] = React.useState(false);
     const [currentTab, setCurrentTab] = React.useState('register');
+    console.log(activeBurger)
 
     const tabs = {
         'register': <Registration currentTab={currentTab} setCurrentTab={setCurrentTab} setActive={setActive}/>,

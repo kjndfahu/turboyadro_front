@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className={styles.wrapper}>
-        <Header activeBurger={activeBurger} setActive={setActiveBurger} />
+        <Header activeBurger={activeBurger} setActiveBurger={setActiveBurger} />
       <div className={styles.content}>
         <Routes>
             <Route path="/" element={<Main activeBurger={activeBurger}/>}></Route>
