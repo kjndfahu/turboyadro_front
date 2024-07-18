@@ -4,8 +4,10 @@ import {Route, Routes} from "react-router-dom";
 import Main from "./components/Main/Main.jsx";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import React from "react";
 
 function App() {
+
   return (
     <div className={styles.wrapper}>
         <Header />

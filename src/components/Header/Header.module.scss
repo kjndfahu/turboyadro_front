@@ -66,13 +66,10 @@
   display: none;
 }
 
-.openmodal{
-  overflow: hidden;
-}
-
 @media (max-width: 980px){
   .wrapper{
     padding: 0;
+    position: fixed;
   }
   .burger{
     display: flex;
