@@ -22,8 +22,8 @@ function Price(){
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Сбор запросов по конкурентам</td>
-                                        <td><span className={styles.price}>100 руб.</span> за задачу</td>
+                                        <td className={styles.tdshechka}>Сбор запросов по конкурентам</td>
+                                        <td className={styles.tdshechka}><span className={styles.price}>100 руб.</span> за задачу</td>
                                     </tr>
                                     <tr>
                                         <td>Кластеризатор по ТОП</td>
