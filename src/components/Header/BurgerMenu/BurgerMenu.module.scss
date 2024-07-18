@@ -110,7 +110,6 @@
 
 .active{
   left: 0 !important;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  position: fixed !important;
 }
 
