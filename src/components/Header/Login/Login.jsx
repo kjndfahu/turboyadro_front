@@ -8,6 +8,7 @@ function Login({currentTab, setCurrentTab, setActive}){
     const dispatch = useDispatch()
     const [error, setError] = React.useState('')
 
+
     const {register,
         handleSubmit,
     } = useForm({
@@ -26,6 +27,7 @@ function Login({currentTab, setCurrentTab, setActive}){
                 alert('Не удалось зарегистрироваться ')
                 console.log(data)
             }
+
             if(data.payload === 'User already exists'){
                 setError(data.payload)
             } else if('token' in data.payload){
@@ -33,6 +35,7 @@ function Login({currentTab, setCurrentTab, setActive}){
             } else {
                 alert('Не удалось зарегистрироваться')
             }
+
         } catch(err){
             setError('Не удалось авторизоваться')
         }

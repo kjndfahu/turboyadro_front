@@ -1,12 +1,13 @@
 import React from "react";
 import styles from './Registration.module.scss'
 import {useForm} from "react-hook-form";
-import {fetchRegister} from "../../../redux/slices/authSlice";
-import {useDispatch} from "react-redux";
+import {fetchRegister, selectIsAuth} from "../../../redux/slices/authSlice";
+import {useDispatch, useSelector} from "react-redux";
 
 function Registration({currentTab, setCurrentTab, setActive}) {
     const dispatch = useDispatch()
     const [error, setError] = React.useState('')
+
 
     const {register,
         handleSubmit,
@@ -25,19 +26,24 @@ function Registration({currentTab, setCurrentTab, setActive}) {
         try{
             const data = await dispatch(fetchRegister(values))
 
+            console.log(data.payload, 'payload')
+
             if(!data.payload){
                 alert('Не удалось зарегистрироваться ')
-                console.log(data)
+                console.log(data.error.message)
             }
-            if(data.payload === 'User already exists'){
-                setError(data.payload)
+            if(data.error.message === 'Request failed with status code 501'){
+                setError('Такой пользователь уже существует')
+            } else if (data.error.message === 'Request failed with status code 400'){
+                setError('Пароль должен быть минимум 5 символов')
             } else if('token' in data.payload){
                 window.localStorage.setItem('token', data.payload.token)
             } else {
                 alert('Не удалось зарегистрироваться')
             }
+
         } catch(err){
-            setError('Пароль должен быть минимум 5 символов')
+            setError('')
         }
     }
     return (
